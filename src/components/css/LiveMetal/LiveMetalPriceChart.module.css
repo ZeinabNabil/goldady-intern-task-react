@@ -1,0 +1,217 @@
+@media screen and (min-width: 992px) and (max-width: 1499px) {
+
+    .gold_price .gold_price_content {
+        font-size: 10px !important;
+    }
+
+}
+@media screen and (min-width: 992px) and (max-width: 1286px) {
+
+    .live_metal_price_header div {
+        font-size: 10px !important;
+        margin-left: 0 !important;
+    }
+
+    .live_metal_price_header div span {
+        right: -15px !important;
+    }
+
+    .gold_price:nth-child(1)::after,
+    .gold_price:nth-child(2)::after {
+        right: 35% !important;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 911px) {
+
+    .gold_price:nth-child(1)::after,
+    .gold_price:nth-child(2)::after {
+        right: 24% !important;
+    }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 768px) {
+
+    .gold_price:nth-child(1)::after,
+    .gold_price:nth-child(2)::after {
+        right: 14% !important;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+
+    .gold_price:nth-child(1)::after,
+    .gold_price:nth-child(2)::after {
+        right: 16% !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .live_metal_price_header div {
+        margin-left: 12px;
+    }
+
+    .gold_price:nth-child(1)::after,
+    .gold_price:nth-child(2)::after {
+        right: 25% !important;
+    }
+}
+
+
+/* Start Live Metal Prices box */
+
+.live_metal_price_container,
+.price_charts {
+    border: 1px solid var(--orange-color);
+    border-radius: 5px;
+}
+
+.live_metal_price_header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.live_metal_price_header h4 {
+    color: var(--orange-color);
+    margin-top: 5px;
+}
+
+.live_metal_price_header div {
+    color: var(--green-color);
+    font-size: 12px;
+    position: relative;
+    margin-left: 12px;
+}
+
+.live_metal_price_header div span {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--green-color);
+    border-radius: 50%;
+    right: -20px;
+    bottom: 1px;
+}
+
+.live_metal_inside_box {
+    width: 90%;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.live_metal_inside_box .metal_name {
+    margin-top: 3px;
+
+}
+
+.gold_price_container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.gold_price:nth-child(1) {
+    color: var(--green-color);
+}
+.gold_price:nth-child(2) {
+    color: red
+}
+
+.gold_price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gold_price .gold_price_content {
+    font-size: 12px;
+}
+.gold_price:nth-child(1), 
+.gold_price:nth-child(2) {
+    position: relative;
+}
+.gold_price:nth-child(1)::after,
+.gold_price:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    border: 5px solid;
+    right: 26%;
+    border-color: transparent transparent var(--green-color);
+}
+
+.gold_price:nth-child(1)::after {
+    border-color: transparent transparent var(--green-color) ;
+}
+.gold_price:nth-child(2)::after {
+    border-color: red transparent transparent ;
+    bottom: 1%;
+
+}
+
+.gold_price .gold_price_content.gold_sell_price::before {
+    border-color: red transparent transparent ;
+    top: 35%;
+}
+
+.daily_change {
+    margin-top: 15px;
+    font-size: 10px;
+    text-align: end;
+    padding: 10px 20px;
+    font-style: italic;
+    color: var(--orange-color);
+}
+
+/* End Live Metal Prices box */
+
+/* Start price chart box */
+
+.price_charts {
+    margin-top: 20px;
+}
+
+.price_charts_header {
+    margin: 10px 0px;
+    color: var(--orange-color);
+}
+
+.price_charts_header span {
+    color: white;
+}
+
+.price_charts_header span {
+    position: relative;
+}
+
+.price_charts_header span::after {
+    content: "";
+    position: absolute;
+    border: 8px solid;
+    border-color: white transparent transparent;
+    bottom: 0;
+    left: 60px;
+}
+
+.chart_container {
+    margin: 10px;
+    background-color: rgb(99 97 92 / 21%);
+}
+
+.choose_how_often {
+    margin: 5px 8px 15px;
+    background-color: transparent;
+}
+
+.days_dropdown {
+    border-color: var(--orange-color);
+    padding: 5px 15px 5px 10px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+}
+
+/* End price chart box */

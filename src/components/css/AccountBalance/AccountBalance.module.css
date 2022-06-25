@@ -1,0 +1,70 @@
+@media screen and (min-width: 992px) and (max-width: 1499px) {
+
+    .gold_balance_box .gold_balance {
+        font-size: 11px !important;
+    }
+
+}
+
+/* Start account balance box */
+
+.account_balance {
+    width: 95%;
+    margin: auto;
+    border: 1px solid var(--orange-color);
+    border-radius: 5px;
+}
+
+.account_balance_navbar nav {
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+
+.account_balance_navbar nav .navbar_brand {
+    color:var(--orange-color) !important;
+}
+
+.account_balance_navbar nav .navbar_toggler {
+    border-color: transparent;
+    color: var(--orange-color) !important;
+}
+
+.navbar_dark .navbar_toggler_icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28189, 145, 47, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.gold_balance_box {
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 15px 0px;
+    padding: 8px 0px;
+}
+
+.gold_balance_box .gold_balance {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gold_balance:nth-child(1) {
+    font-weight: bold;
+}
+
+.gold_balance_container {
+    margin-top: 5px;
+}
+
+
+.gold_balance_container .gold_balance_header {
+    color: var(--orange-color);
+}
+
+.account_balance_boxes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 10px 18px;
+    margin-bottom: 15px;
+}
+
+/* End account balance box */

@@ -1,0 +1,173 @@
+@media screen and (min-width: 992px) and (max-width: 1286px) {
+
+    .form_inputs .price_limit_label {
+        font-size: 9px !important;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    .form_inputs .price_limit_label {
+        font-size: 11px !important;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .form_inputs .price_limit_label {
+        font-size: 14px !important;
+    }
+}
+
+
+/* Start instant-buy-sell box */
+
+.instant_buy_sell {
+    width: 95%;
+    margin: auto;
+    border: 1px solid var(--orange-color);
+    border-radius: 5px;
+}
+
+.second_box_header {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    color: var(--orange-color);
+}
+
+.buy_sell_btns_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 20px;
+}
+
+.buy_sell_btns {
+    background-color: #464545;
+    width: 48%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 22px;
+    border-radius: 5px;
+    opacity: 30%;
+    text-transform: uppercase;
+}
+
+.buy_sell_btns_container .buy_sell_btns.clicked {
+   opacity: 100%;
+   position: relative;
+}
+.buy_sell_btns_container .buy_sell_btns.clicked::after {
+   
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 11%;
+    left: 0;
+    background-color: var(--orange-color);
+    bottom: 0;
+}
+
+.form_dropdown .form_select {
+    width: 100%;
+    border-color: white;
+    padding: 14px 15px 10px 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form_dropdown .form_select:focus {
+    box-shadow: 0 0 0 transparent !important;
+    border-color: white !important;
+}
+
+.input_group {
+    margin-bottom: 10px !important;
+}
+
+.input_span {
+    background-color: transparent;
+    border-color: white transparent white white;
+    padding: 10px 10px;
+}
+
+.form_inputs {
+    position: relative;
+    margin-bottom: 10px
+}
+
+.form_inputs .form_label {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    transform: translate(-2%, -50%);
+}
+
+.form_inputs .price_limit_label {
+    left: 6%;
+    transform: translate(-4%, -50%);
+}
+
+.form_inputs .form_input,
+.form_inputs .form_control:focus {
+    background-color: transparent;
+    border-color: white;
+}
+
+.form_inputs .form_input {
+    text-align: end;
+    width: 100%;
+    border-color: white;
+    padding: 10px 15px 8px 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form_inputs .form_control:focus {
+    box-shadow: 0 0 0 0.25rem transparent;
+    border-color: white;
+}
+
+.dropdown_input_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown_input_container .dropdown_input {
+    width: 48%;
+}
+
+.order_value_input {
+    margin-bottom: 30px !important;
+}
+
+.reset_preview_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px;
+}
+
+.reset_preview_container .reset_preview_btns {
+    width: 30%;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+}
+
+.reset_preview_container .reset_preview_btns.reset_btn {
+    background-color: #8f8f8f;
+}
+
+.reset_preview_container .reset_preview_btns.preview_btn {
+    background-color: #00ce7d;
+}
+
+/* End instant-buy-sell box */
